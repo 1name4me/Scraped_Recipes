@@ -1,0 +1,7 @@
+images = response.css('div.card__imageContainer img::attr(src)').getall()
+
+title = response.css('div.card__detailsContainer-left a h3::text').getall()
+
+reviews = response.css('div.card__ratingContainer span.ratings-count.elementFont__details::text').strip()
+
+links to separate recipes = response.css('div.card__imageContainer a::attr(href)')
